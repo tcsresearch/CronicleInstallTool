@@ -1,0 +1,19 @@
+
+########## Control.sh Features ##########
+
+function Controlsh-Setup() {
+	# control.sh - Setup Cronicle
+	echo "[CONTROL] Running Cronicle Setup..."
+	# /opt/cronicle/bin/control.sh setup
+	# $Cronicle_BinPath/control.sh setup
+	$Cronicle_ControlFile setup
+}
+
+function Controlsh-Start() {
+	# control.sh - Start Cronicle
+	echo "[CONTROL] Starting Cronicle..."
+	# /opt/cronicle/bin/control.sh start
+	# $Cronicle_BinPath/control.sh start
+	$Cronicle_ControlFile start
+}
+

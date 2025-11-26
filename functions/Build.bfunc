@@ -1,0 +1,10 @@
+function Build_Bundle() {
+	# TODO: Ensure we are inside the correct folder.
+	# basic install, will bundle cronicle into "dist" folder using default storage engine (Filesystem)
+	./bundle
+	# add extra storage engines, and custom output dir:
+	## ./bundle /path/to/dir --S3 --mysql
+	# check all options:
+	## ./bundle --help
+}
+

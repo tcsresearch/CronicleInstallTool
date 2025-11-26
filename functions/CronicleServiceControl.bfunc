@@ -1,0 +1,33 @@
+
+########## Service Control ##########
+# TODO: Need service file install function
+# 	- Copy service file to /etc/systemd/system
+# 	- Call EnableService function.
+#	Need sanity check to confirm service file exists before and after install.
+
+function InstallService() {
+	# Install Cronicle Service
+	echo "[SERVICE] Installing Service..."
+	cp -v $CronicleServiceFile $Systemd_InstallDir
+}
+
+function EnableService() {
+	# Enable Cronicle Service
+	echo "[SERVICE] Enabling Cronicle..."
+	systemctl enable cronicle
+}
+
+function StartService() {
+	# Start Cronicle Service
+	## DISABLED - Not needed.  Using control.sh instead.
+	echo "[SERVICE] Starting Cronicle..."
+	systemctl start cronicle
+}
+
+function StatusService() {
+	# Get Cronicle Service Status
+	# DISABLED - Not needed.  Using control.sh instead.
+	echo "[SERVICE] Checking Cronicle Service Status..."
+	systemctl status cronicle
+}
+

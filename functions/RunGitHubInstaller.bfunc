@@ -1,0 +1,21 @@
+
+########## GitHub Installers ##########
+# TODO: Implement option on run to select between Cronicle and Cronicle edge via case statement which calls the selected function.
+#	- Change echo lines to use $Cronicle_SelectedVersion variable.
+
+function RunGithubInstall_Cronicle() {
+	# Install Cronicle From Github
+	GitHubURL_Cronicle = 'https://raw.githubusercontent.com/jhuckaby/Cronicle/master/bin/install.js'
+	echo "[Cronicle] Running Initial Installation From GitHub..."
+	# curl -s https://raw.githubusercontent.com/jhuckaby/Cronicle/master/bin/install.js | node 
+	curl -s $GitHubURL_Cronicle | node
+}
+
+function RunGithubInstall_CronicleEdge() {
+        # Install Cronicle-edge From Github
+        GitHubURL_CronicleEdge = 'https://raw.githubusercontent.com/cronicle-edge/cronicle-edge/refs/heads/main/bin/install.js'
+        echo "[Cronicle-edge] Running Initial Installation From GitHub..."
+        # curl -s https://raw.githubusercontent.com/jhuckaby/Cronicle/master/bin/install.js | node
+	curl -s $GitHubURL_CronicleEdge | node
+}
+

@@ -1,0 +1,12 @@
+[Unit]
+Description=Node Cronicle
+After=network.target
+
+[Service]
+Type=forking
+ExecStart=/opt/cronicle-edge/dist/bin/control.sh start
+ExecStop=/opt/cronicle-edge/dist/bin/control.sh stop
+PIDFile=/run/cronicle-edge.pid
+
+[Install]
+WantedBy=multi-user.target

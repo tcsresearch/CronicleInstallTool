@@ -1,0 +1,49 @@
+# PreLoader.bfunc
+## This preLoader function should source our config files and functions.
+
+# # Specify conf and functions folders.
+ConfDir="./conf"
+FuncDir="./functions"
+
+
+function PreLoader_Config() {
+	 Source our config.
+	 # Define the target directory
+	 target_directory="$ConfDir"
+
+	# Check if the directory exists and is a directory
+	if [ -d "$target_directory" ]; then
+	  # Loop through all files in the target directory
+	  for file in "$target_directory"/*.conf; do
+	    # Check if the current item is a regular file before sourcing
+	    if [ -f "$file" ]; then
+	      echo "Sourcing Config: $file"
+	      source "$file"
+	    fi
+	  done
+	else
+	  echo "Error: Directory '$target_directory' not found or is not a directory."
+	fi
+}
+
+
+function PreLoader_Functions() {
+         # Source our functions.
+         # Define the target directory
+         target_directory="$FuncDir"
+
+        # Check if the directory exists and is a directory
+        if [ -d "$target_directory" ]; then
+          # Loop through all files in the target directory
+          for file in "$target_directory"/*.bfunc; do
+            # Check if the current item is a regular file before sourcing
+            if [ -f "$file" ]; then
+              echo "Sourcing Function: $file"
+              source "$file"
+            fi
+          done
+        else
+          echo "Error: Directory '$target_directory' not found or is not a directory."
+        fi
+}
+

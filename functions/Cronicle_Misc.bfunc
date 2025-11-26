@@ -1,0 +1,30 @@
+##### Misc Functions For CronicleInstallTool ##########
+#
+
+function ShowConfigFileLocation() {
+	# Notify of config file location
+	echo "Config File: $Cronicle_ConfigFile"
+}
+
+function SanityCheck_ServiceFileExists_PreInstall() {
+	if [ ! -f $Cronicle_ServiceFile ]; then
+		echo "ERROR! Service File $Cronicle_ServiceFile Does Not Exist."
+		echo "Exiting..."
+		# Place correct quit command here.
+	fi
+}
+
+function SanityCheck_ServiceFileExists_PostInstall() {
+        if [ ! -f $CronicleServiceFile ]; then
+                echo "ERROR! Service File $CronicleServiceFile Does Not Exist."
+                echo "Exiting..."
+                # Place correct quit command here.
+	fi
+}
+
+function NotifyWebAdminURL() {
+	# Notify of Web Admin URL 
+	echo "You may now access Cronicle via the web admin interface at: 127.0.0.1:3012."
+	echo "User/Pass: admin/admin"
+}
+

@@ -1,0 +1,19 @@
+function CheckFiles() {
+function CheckFiles_DisplayOnly() {
+            	cat "$file" | grep -h function | grep -h {
+function CheckFiles_SaveData() {
+                cat "$file" | grep -h function | grep -h { >> FunctionsList.txt
+function PrepFunctionsList() {
+function PrepFunctionsList_StripFunction() {
+function PrepFunctionsList_StripBrackets() {
+function FileCopy() {
+function Controlsh-Setup() {
+function Controlsh-Start() {
+function ShowConfigFileLocation() {
+function NotifyWebAdminURL() {
+function InstallService() {
+function EnableService() {
+function StartService() {
+function StatusService() {
+function RunGithubInstall_Cronicle() {
+function RunGithubInstall_CronicleEdge() {
