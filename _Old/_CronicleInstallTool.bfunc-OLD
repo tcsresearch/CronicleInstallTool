@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 
 ########## GitHub Installers ##########
 # TODO: Implement option on run to select between Cronicle and Cronicle edge via case statement which calls the selected function.
