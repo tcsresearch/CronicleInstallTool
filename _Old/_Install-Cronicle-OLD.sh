@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Install Cronicle From Github
 echo "Running Initial Installation From GitHub..."
 curl -s https://raw.githubusercontent.com/jhuckaby/Cronicle/master/bin/install.js | node 
