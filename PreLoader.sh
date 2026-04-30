@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # PreLoader.sh
 # This script will load our config and functions.
 #
