@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 ### RunMain.sh ###
 
 # Before we can begin, we must run PreLoader to source our config and functions.
