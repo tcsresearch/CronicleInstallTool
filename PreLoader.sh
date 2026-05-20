@@ -5,7 +5,9 @@
 # This script will load our config and functions.
 #
 # Define Our Functions File
-FuncFile="$(dirname $0)/PreLoader.bfunc"
+## DISABLED: FuncFile="$(dirname $0)/PreLoader.bfunc"
+FuncFile="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/PreLoader.bfunc" # Test 05/20/26
+
 if [ -f "$FuncFile" ]; then
     source "$FuncFile"
 fi
