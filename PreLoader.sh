@@ -1,10 +1,13 @@
 #!/usr/bin/env bash
+# shellcheck source=/dev/null
 
 # PreLoader.sh
 # This script will load our config and functions.
 #
-if [ -f "$(dirname $0)/PreLoader.bfunc" ]; then
-    source "$(dirname $0)/PreLoader.bfunc"
+# Define Our Functions File
+FuncFile="$(dirname $0)/PreLoader.bfunc"
+if [ -f "$FuncFile" ]; then
+    source "$FuncFile"
 fi
 
 
