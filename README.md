@@ -5,6 +5,13 @@ Scripts to install Cronicle or Cronicle-edge on Fedora
 This utility will install Cronicle or Cronicle-edge and the accompanying Systemd service.
 
 <hr>
+<h3>Project Status</h3>
+<p>
+  <!-- SHELLCHECK_COMPLIANCE_START --> <strong>Shellcheck Date Of Compliance:</strong> Pending Execution <!-- SHELLCHECK_COMPLIANCE_END -->
+</p>
+
+<hr>
+
 <h3> Proposed Features - Short Term </h3>
 <ul>
   <li>Install and perform initial configuration of Cronicle or Cronicle-edge.</li>
